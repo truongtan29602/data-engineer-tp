@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    db:
+        image: postgres:latest
+        environment:
+            POSTGRES_HOST_AUTH_METHOD: 'trust'
+        volumes:
+            - ./db/words.sql:/docker-entrypoint-initdb.d/words.sql
+        ports:
+            - "5432:5432"
+
+    words:
+        build: ./words
+        container_name: words-app
+        command: ["java", "-Xmx8m", "-Xms8m", "-jar", "target/words.jar"]
+        depends_on:
+            - db
+        ports:
+            - "8080:8080"
+
+    web:
+        build: ./web
+        depends_on:
+            - words
+            - db
+        ports:
+            - "80:80"
