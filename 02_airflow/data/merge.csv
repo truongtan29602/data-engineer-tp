@@ -1,0 +1,6 @@
+attributes,classes,languages,levels,names,proficiences,races,spells
+"[17, 8, 10, 2, 4]",druid,common,2,Gail,"['skill-insight', 'skill-medicine']",gnome,['regenerate']
+"[12, 14, 11, 12, 13]",bard,dwarvish,2,Robert,"['skill-athletics', 'skill-arcana', 'skill-persuasion']",half-orc,"['awaken', 'hypnotic-pattern']"
+"[10, 10, 10, 4, 14]",paladin,primordial,1,Lindsay,"['skill-athletics', 'skill-religion']",human,"['bless', 'heroism']"
+"[18, 11, 6, 12, 13]",ranger,giant,3,Tamara,"['skill-athletics', 'skill-insight', 'skill-investigation']",tiefling,"['detect-poison-and-disease', 'alarm']"
+"[18, 5, 13, 8, 10]",wizard,celestial,2,Brittany,"['skill-medicine', 'skill-investigation']",half-elf,['arcane-sword']
